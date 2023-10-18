@@ -79,6 +79,19 @@ main {
   font-size: 60px;
   font-weight: 800;
 }
+
+.right {
+  width: 300px;
+  height: 400px;
+  padding: 20px 10px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  text-align: center;
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 /*
 # Front-end Style Guide
 
