@@ -46,17 +46,17 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .left {
-  width: 300px;
+  width: 250px;
   height: 400px;
-  padding: 20px 10px;
-  background: linear-gradient(hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+  padding: 20px 30px;
+  background: linear-gradient(hsla(256, 72%, 46%, 0.8), hsl(241, 81%, 54%));
   border-radius: 20px;
   text-align: center;
-  color: var(--White);
+  color: var(--Light-lavender);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -78,6 +78,12 @@ main {
 .left .result-score {
   font-size: 60px;
   font-weight: 800;
+  color: var(--White);
+}
+
+.left .great {
+  color: var(--White);
+  font-size: 25px;
 }
 
 .right {
@@ -90,6 +96,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.right img {
+  margin-right: -60px;
 }
 
 .right p {
@@ -118,62 +128,46 @@ main {
 }
 
 .right .button {
-  width: 100%;
-  height: 40px;
+  width: 80%;
+  height: 45px;
   border: none;
   border-radius: 20px;
   color: var(--White);
   background-color: var(--Dark-gray-blue);
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right .button:hover {
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
 }
-/*
-# Front-end Style Guide
 
-## Layout
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
 
-The designs were created to the following widths:
+  .left {
+    width: 100%;
+    padding: 0;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    top: 0;
+  }
 
-- Mobile: 375px
-- Desktop: 1440px
+  .right {
+    width: 90%;
+    margin-top: 280px;
+  }
 
-## Colors
+  .right img {
+    margin-right: -100px;
+  }
 
-### Primary
-
-
-
-## Gradients
-
-- Light slate blue (background): hsl(252, 100%, 67%)
-- Light royal blue (background): hsl(241, 81%, 54%)
-
-- Violet blue (circle): hsla(256, 72%, 46%, 1)
-- Persian blue (circle): hsla(241, 72%, 46%, 0)
-
-
-
-### Neutral
-
-
-
-### Notes
-
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraphs): 18px
-
-### Font
-
-- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
-- Weights: 500, 700, 800
-
-
-*/
+  .right .button {
+    height: 60px;
+  }
+}
