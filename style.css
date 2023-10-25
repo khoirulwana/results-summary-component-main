@@ -129,9 +129,9 @@ main {
 
 .right .button {
   width: 80%;
-  height: 45px;
+  height: 50px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   color: var(--White);
   background-color: var(--Dark-gray-blue);
   cursor: pointer;
